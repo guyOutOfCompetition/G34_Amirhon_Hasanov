@@ -1,0 +1,8 @@
+1. Thread lifecycle includes 3 steps(New,In process, finish) or 4 if he had a period of wait. The first period is new when it recently created
+and doesn't start his work. The second period is when In process it means thread start his work and working at that time.
+The third period is when thread wait anything (it maybe notify from another thread or thread wait a deadline of sleep method).
+And the last period is then thread when thread is ended his work.
+2.Difference between Callable and Runnable is only that Callable is waiting any value which we have to give for them but
+Runnable isn't waiting any value cause Runnable is void. We can say that Callable is older brother of Runnable.
+And for using Callable in Thread Pools we can not use 'execute', so we have to use 'submit' and we also can use 'submit'
+with Runnable.
